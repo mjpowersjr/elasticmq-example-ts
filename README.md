@@ -11,6 +11,10 @@ Simple example of using elasticmq in a ts project.
 # install deps
 yarn install
 
+# build
+yarn clean
+yarn build
+
 # start elasticmq instance
 yarn start-elasticmq
 
