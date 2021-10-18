@@ -1,0 +1,22 @@
+{
+  "name": "elasticmq-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mike Powers <mjpowersjr@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "start-demo": "node lib/index.js",
+    "start-elasticmq": "docker run -p 9324:9324 -p 9325:9325 -v ${PWD}/config/elasticmq.conf:/opt/elasticmq.conf softwaremill/elasticmq-native"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/node": "^16.11.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.37.0"
+  }
+}

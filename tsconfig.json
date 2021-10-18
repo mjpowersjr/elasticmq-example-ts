@@ -1,0 +1,25 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2020",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "declaration": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": false,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "outDir": "lib",
+    "rootDir": "src"
+  },
+  "include": [
+    "src/index.ts",
+  ],
+  "exclude": [
+    "./dist",
+    "node_modules"
+  ]
+}
